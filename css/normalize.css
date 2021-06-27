@@ -10,17 +10,20 @@ body {
 	margin: auto;
 	width: 1200px;
 }
-.first-menu {
+#first-menu {
 	padding-right: 121px;
 }
-
-.first-menu ul li {
+#first-menu .menu-respone {
+	visibility: hidden;
+	display: none;
+}
+#first-menu ul li {
 	list-style-type: none;
 	display: inline;
 	padding: 36px;
 }
 
-.first-menu ul li a {
+#first-menu ul li a {
 	text-decoration: none;
 	font-family: Avenir;
 	font-weight: 500;
@@ -29,9 +32,10 @@ body {
 	line-height: 160%;
 	color: #4B5D68;
 }
-ul li.active a {
+#first-menu ul li.active a {
 	color: #212353;
 	font-weight: 800;
+	font-family: Avenir;
 }
 .nav-header {
     display: flex;
@@ -65,16 +69,39 @@ button {
     align-items: center;
     cursor: pointer;
 }
-@media only screen and(max-width: 300){
-	.nav-header {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+// Responsive table, smartphone
+@media only screen and(max-width:600px) {
+  body {
+    background-color: red;
+  }
 }
-/*section data*/
 
+/*section data*/
+.save-data {
+    position: relative;
+    display: flex;
+    padding-top: 161px;
+}
+.text-data {
+    width: 60%;
+    text-align: left;
+    overflow: hidden;
+}
+.first-text {
+    width: 41%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.image-data {
+  background-image: url(../image/data.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 80%;
+	height: 500px;
+	position: absolute;
+	right: -72px;
+	top: 40%;
+}
 .text-data h1 {
 	font-family: Helvetica;
 	font-weight: 700;
@@ -83,5 +110,27 @@ button {
 	line-height: 88px;
 	color: #212353;
 }
-
+.text-data p {
+	font-family: Avenir;
+	font-weight: 500;
+	font-style: normal;
+	color: #4B5D68;
+	font-size: 18px;
+	line-height: 160%;
+}
+.text-data .btn-data {
+	font-family: Avenir;
+	text-align: center;
+	line-height: 28.8px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+	color: #ffffff;
+}
+.btn-data {
+	background-color: #9C69E2;
+	border-radius: 50px;
+	padding: 18px;
+	width: 25%;
+}
 /*end section data*/
