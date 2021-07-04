@@ -61,7 +61,7 @@ p {
   	visibility: visible;
   	display: block;
   	position: relative;
-	left: -50%;
+	left: -37%;
   }
   #topnav {
   	overflow: hidden;
@@ -150,10 +150,18 @@ button {
 		text-align: justify;
 		width: 57%;
 	}
-	button.btn-data {
+	.text-data .btn-data {
 		width: 57%;
 	}
+	.save-data .text-data .image-data {
+		background-size: contain;
+		width: 33%;
+		top: 24%;
+		background-image: url(../image/data.png);
+		background-repeat: no-repeat;
+	}
 }
+/**/
 .first-text {
     width: 41%;
     padding-top: 80px;
@@ -277,16 +285,6 @@ p.titles-second {
 	.text {
 		width: 55%;
 	}
-	.save-data .image-data {
-    background-image: url(../image/data.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    width: 80%;
-    height: 500px;
-    position: absolute;
-    right: -72px;
-    top: 36%;
-}
 	h1.titles {
 		text-align: center;
 		padding-top: 0;
@@ -407,7 +405,7 @@ p.text-second {
 	    display: flex;
     justify-content: flex-start;
     align-items: center;
-	padding-top: 20px;
+	padding-top: 12px;
 }
 
 .btn-learn {
@@ -447,8 +445,28 @@ p.col-second {
 	.demo-learn {
 		padding-top: 20px;
 	}
+	// button learn more 480px
 }
 /*media 768 col-box*/
 @media only screen and (max-width: 768px){
-
+	.text-data .image-data {
+	background-image: url(../image/data.png);
+	background-repeat: no-repeat;
+	width: 49%;
+	background-size: contain;
+	left: 2px;
+	top: 57%;
+	}
+	.high-level {
+		padding-top: 200px;
+	}
+	.first-text {
+		padding-top: 20px;
+	    width: 86%;
+	    text-align: justify;
+		}
+	button.btn-data {
+		width: 86.66%;
+		padding: 22px;
+		}
 }
