@@ -237,7 +237,7 @@ p.titles-second {
 }
 /*media high-level*/
 @media only screen and (max-width: 480px) {
-	.row {
+	.high-level .row {
 		width: 35%;
 		display: block;
 		text-align: justify;
@@ -253,8 +253,9 @@ p.titles-second {
 		margin-left: -20px;
 		margin-bottom: -100px;
 	}
-	p.titles-second {
-		padding: 10px 16px 0 4px;
+	.high-text p.titles-second {
+		padding-right: 13px;
+		padding-left: 0px;
 	}
 }
 /*media features*/
@@ -276,6 +277,16 @@ p.titles-second {
 	.text {
 		width: 55%;
 	}
+	.save-data .image-data {
+    background-image: url(../image/data.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    right: -72px;
+    top: 36%;
+}
 	h1.titles {
 		text-align: center;
 		padding-top: 0;
@@ -283,6 +294,7 @@ p.titles-second {
 	.features .text-second {
 		width: 80%;
 		padding-top: 10px;
+		padding-right: 90px;
 	}
 	.fea-box {
 		width: 60%;
@@ -294,13 +306,14 @@ p.titles-second {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
+		width: 52%;
 	}
 	.image-box  {
 		display: flex;
 		justify-content: center;
 	}
 	p.titles-second {
-		padding-right: 0;
+		padding-right: 0px;
 		padding-bottom: 40px;
 	}
 }
@@ -381,7 +394,7 @@ p.text-second {
 	line-height: 160%;
 	display: flex;
 	align-items: center;
-	letter-spacing: 0.0005rem;
+	letter-spacing: 0.005rem;
 	text-decoration: none;
 }
 .demo-learn {
