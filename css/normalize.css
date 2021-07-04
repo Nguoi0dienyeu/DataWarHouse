@@ -4,7 +4,6 @@
 }
 body {
 	background-color: #F6FAF;
-	// background-color: red;
 }
 p {
 	font-family: Avenir;
@@ -236,6 +235,7 @@ p.titles-second {
 	padding-top: 40px;
 	padding-right: 119px;
 }
+/*media high-level*/
 @media only screen and (max-width: 480px) {
 	.row {
 		width: 35%;
@@ -245,6 +245,7 @@ p.titles-second {
 	.high-text {
 		padding-left: 0;
 		padding-right: 0;
+		padding-top: 100px;
 	}
 	.high-image img {
 		width: 100%;
@@ -252,15 +253,58 @@ p.titles-second {
 		margin-left: -20px;
 		margin-bottom: -100px;
 	}
-	h1.titles {
-		font-size: 30px;
-		letter-spacing: 2px;
-		text-align: left;
-	}
 	p.titles-second {
 		padding: 10px 16px 0 4px;
 	}
 }
+/*media features*/
+@media only screen and (max-width: 480px){
+	.features {
+		width: 65%;
+	}
+	.fea.text {
+		width: 65%;
+	}
+	.features h1.titles {
+		padding-right: 53px;
+	}
+	.features p.text-second {
+		margin-left: 5px;
+	}
+}	
+@media only screen and (max-width: 768px) {
+	.text {
+		width: 55%;
+	}
+	h1.titles {
+		text-align: center;
+		padding-top: 0;
+	}
+	.features .text-second {
+		width: 80%;
+		padding-top: 10px;
+	}
+	.fea-box {
+		width: 60%;
+	}
+	.features {
+		padding-top: 40px;
+	}
+	/*day la tab anh cua features*/
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.image-box  {
+		display: flex;
+		justify-content: center;
+	}
+	p.titles-second {
+		padding-right: 0;
+		padding-bottom: 40px;
+	}
+}
+/*het media features*/
 .fea.text {
     text-align: center;
 }
@@ -376,4 +420,22 @@ p.col-second {
     color: #4B5D68;
     padding-top: 45px;
     padding-right: 109Px;
+}
+/*media 480 col-box*/
+@media only screen and (max-width: 480px) {
+.fea-box {
+	width: 33.33%;
+	}
+	.search {
+		width: 36.33%;
+		padding-left: 92px;
+		padding-top: 40px;
+	}
+	.demo-learn {
+		padding-top: 20px;
+	}
+}
+/*media 768 col-box*/
+@media only screen and (max-width: 768px){
+
 }
