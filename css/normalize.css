@@ -56,41 +56,8 @@ p {
     background-color: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 }
-@media only screen and (max-width: 768px) {
-  .nav-header .icon {
-  	visibility: visible;
-  	display: block;
-  	position: relative;
-	left: -37%;
-  }
-  #topnav {
-  	overflow: hidden;
-  	position: relative;
-  }
-  .nav-header #topnav {
-  	display: none;
-  }
-   .first-menu ul li a {
-  	color: #333;
-  	display: block;
-  	text-transform: uppercase;
-  }
- .first-menu ul li a.icon {
- 	background-color: gray;
- 	display: block;
- 	position: absolute;
- 	right: 0;
- 	top: 0;
- }
- .first-menu ul li {
-    list-style-type: none;
-    padding: 0;
-	}
-	.demo {
-		width: 50%;
-	}
-}
-@media only screen and (max-width: 480px) {
+
+@media screen and (max-width: 1349px)  {
 	.nav-header .icon {
   	visibility: visible;
   	display: block;
@@ -138,7 +105,7 @@ button {
 .text-data {
     width: 60%;
 }
-@media only screen and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 900px) {
 	.save-data {
 		padding-top: 20px;
 	}
@@ -244,7 +211,7 @@ p.titles-second {
 	padding-right: 119px;
 }
 /*media high-level*/
-@media only screen and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 900px) {
 	.high-level .row {
 		width: 35%;
 		display: block;
@@ -267,7 +234,7 @@ p.titles-second {
 	}
 }
 /*media features*/
-@media only screen and (max-width: 480px){
+@media screen and (min-width: 240px) and (max-width: 900px){
 	.features {
 		width: 65%;
 	}
@@ -281,7 +248,7 @@ p.titles-second {
 		margin-left: 5px;
 	}
 }	
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 240px) and (max-width: 900px) {
 	.text {
 		width: 55%;
 	}
@@ -433,7 +400,7 @@ p.col-second {
     padding-right: 109Px;
 }
 /*media 480 col-box*/
-@media only screen and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 900px) {
 .fea-box {
 	width: 33.33%;
 	}
@@ -448,7 +415,7 @@ p.col-second {
 	// button learn more 480px
 }
 /*media 768 col-box*/
-@media only screen and (max-width: 768px){
+@media screen and (min-width: 240px) and (max-width: 900px){
 	.text-data .image-data {
 	background-image: url(../image/data.png);
 	background-repeat: no-repeat;
