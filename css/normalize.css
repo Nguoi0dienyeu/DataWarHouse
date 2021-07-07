@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-	background-color: #F6FAF;
+	background-color:#FFFFFF;
 }
 p {
 	font-family: Avenir;
@@ -63,18 +63,21 @@ p {
   	display: block;
 	position: absolute;
 	left: 88%;
-  }
-  #topnav {
-  	overflow: hidden;
-  	position: relative;
-  	left: -54%;
-	top: 2%;
-  }
-  .second-menu  a:hover {
-  	background-color: dimgray;
+	transition: width 2s, height 4s;
   }
  	.demo {
   	width: 37%;
+  }
+  .first-menu {
+	position: relative;
+	background: #E5E5E5;
+	top: 5%;
+	left: -58%;
+	display: none;
+	border-radius: 36px;
+  }
+  .first-menu ul li a {
+  	text-transform: uppercase;
   }
 }
 button {
@@ -246,6 +249,11 @@ p.titles-second {
 	}
 	.features p.text-second {
 		margin-left: 5px;
+	}
+	#topnav ul li {
+   	display: block;
+	padding: 7px;
+	line-height: 38px;	
 	}
 }	
 @media screen and (min-width: 240px) and (max-width: 900px) {
