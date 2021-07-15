@@ -60,7 +60,7 @@ p {
 	display: none;
 }
 
-@media screen and (max-width: 860px)  {
+@media screen and (max-width: 1200px)  {
 	.nav-header .icon {
   	visibility: visible;
   	display: block;
@@ -107,7 +107,7 @@ p {
 	text-decoration: none;
   }
   .closebtn:hover , .closebtn:focus {
-  	opacity: 10%;
+  	opacity: 30%;
   	transition: 0.8s;
   }
 }
@@ -139,7 +139,7 @@ button {
 .text-data {
     width: 60%;
 }
-@media screen and (min-width: 240px) and (max-width: 860px) {
+@media screen and (max-width : 480px) {
 	.save-data {
 		padding-top: 20px;
 	}
@@ -352,7 +352,7 @@ p.text-second {
 	img.vector {
     position: absolute;
     left: 12rem;
-    bottom:163px;
+    bottom:48%;
 		}
 	img.vector2 {
 		position: absolute;
@@ -366,12 +366,11 @@ p.text-second {
     top: -16%;
     transform: rotate(118deg);
     width: 86%;
-}
 	}
 	img.eclip {
     position: absolute;
 	top: 8%;
-	left: 61%;
+	left: 60%;
 	}
 	img.eclip3 {
 	position: absolute;
@@ -380,14 +379,14 @@ p.text-second {
 	}
 	img.search {
     position: absolute;
-    left: -5rem;
+    right: 71%;
     top: 20%;
 	}
 	.col-text {
     position: absolute;
-	width: 72%;
-    left: 40%;
-    top: 10%;
+	width: 73%;
+    left: 38%;
+    top: 12%;
 }
 .col-link{
 	color: #212353;
@@ -405,15 +404,21 @@ p.text-second {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 62px;
 }
 .demo-learn4 {
-	    display: flex;
+	display: flex;
     justify-content: flex-start;
     align-items: center;
-	padding-top: 12px;
+	padding-top: 35px;
 }
 
+.demo-learn3 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 87px;
+}
 .btn-learn {
     display: flex;
     align-items: center;
@@ -424,9 +429,11 @@ p.text-second {
 h1.col-title {
     font-family: Helvatica;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 130%;
+    display: flex;
+    align-items: center;
     color: #212353;
 }
 p.col-second {
@@ -435,7 +442,7 @@ p.col-second {
     font-size: 16px;
     line-height: 25.6px;
     color: #4B5D68;
-    padding-top: 45px;
+    padding-top: 23px;
     padding-right: 109Px;
 }
 /*media 480 col-box*/
@@ -475,4 +482,88 @@ p.col-second {
 		cursor: pointer;
 		padding: 22px;
 		}
+}
+/*testimonials*/
+.testimonials {
+	background-color:#9C69E2;
+	border-radius: 50px;
+}
+.tes.text {
+    padding: 109px 0 0 93px;
+}
+.carosoul {
+    background: #9C69E2;
+    border: 20px;
+    padding: 88px 0 130px 93px;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+.carosoul:nth-of-type(2) {
+    padding-left: 20px;
+}
+.flex-container {
+	display: flex;
+}
+p.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32.4px;
+    color: #4B5D68;
+    padding-top: 20px;
+}
+.carosoul-box {
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    font-family: Avenir;
+    box-shadow: 0px 20px 0px rgba(88, 105, 226, 0.3);
+}
+.carosoul-box.one {
+	padding: 60px 70px 50px 67px;
+}
+.carosoul-box.two {
+    border-radius: 20px;
+    color: #4B5D68;
+    padding: 60px 70px 50px 70px;
+    box-sizing: border-box;
+    background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%) #ffffff;
+}
+.carosoul .two:nth-of-type(1) {
+    background: red;
+    width: 71%;
+}
+.carosoul-box.three {
+    border-radius: 20px;
+    color: #4B5D68;
+    position: absolute;
+    box-sizing: border-box;
+    background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%) #ffffff;
+}
+
+.box-text {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.box-text a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22.5px;
+	letter-spacing: 1%;
+	color: #9C69E2;
+}
+h2 {
+	font-weight: 900;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28.8px;
+	letter-spacing: 0.5%;
+}
+.text h1 {
+	font-family: Helvetica;
+	font-weight: 700;
+	font-size: 40px;
+	color: #ffffff;
+	line-height: 52px;
 }
