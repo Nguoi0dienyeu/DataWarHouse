@@ -138,9 +138,12 @@ button {
 .text-data {
     width: 60%;
 }
-@media screen and (min-width: 240px) and (max-width: 900px) {
+@media screen and (min-width: 240px) and  (max-width: 768px) {
 	.save-data {
 		padding-top: 20px;
+	}
+	.text-data {
+		width: 100%;
 	}
 	.text-data .title {
 		font-size: 30px;
@@ -150,11 +153,12 @@ button {
 		text-align: justify;
 	}
 	.text-data .btn-data {
-		width: 57%;
+		width: 100%;
+		margin-top: 20px;
 	}
 	.save-data .text-data .image-data {
 		background-size: contain;
-		width: 33%;
+		width: 100%;
 		top: 24%;
 		background-image: url(../image/data.png);
 		background-repeat: no-repeat;
@@ -163,8 +167,7 @@ button {
 /**/
 .first-text {
     width: 41%;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding: 80px 0 60px 0;
 }
 .image-data {
     background-image: url(../image/data.png);
@@ -243,11 +246,12 @@ p.titles-second {
 	padding-right: 119px;
 }
 /*media high-level*/
-@media screen and (min-width: 240px) and (max-width: 900px) {
+@media screen and (min-width: 240px) and (max-width: 768px) {
 	.high-level .row {
-		width: 35%;
+		width: 100%;
 		display: block;
 		text-align: justify;
+		border-radius: 10px;
 	}
 	.high-text {
 		padding-left: 0;
@@ -261,18 +265,12 @@ p.titles-second {
 		margin-bottom: -100px;
 	}
 	.high-text p.titles-second {
-		padding-right: 13px;
-		padding-left: 0px;
+		padding: 0 13px 0 3px;
 	}
 }
 /*media features*/
-@media screen and (min-width: 240px) and (max-width: 900px){
-	.features {
-		width: 65%;
-	}
-	.fea.text {
-		width: 65%;
-	}
+/*reponsive mobile section features*/
+@media screen and (max-width: 468px){
 	.features h1.titles {
 		padding-right: 53px;
 	}
@@ -283,32 +281,25 @@ p.titles-second {
    	display: block;
 	padding: 7px;
 	line-height: 38px;	
-	}
-}	
-@media screen and (min-width: 240px) and (max-width: 900px) {
-	.text {
-		width: 55%;
-	}
+	}	
 	h1.titles {
 		text-align: center;
 		padding-top: 0;
 	}
 	.features .text-second {
-		width: 80%;
+		width: 98%;
 		padding-top: 10px;
 		padding-right: 90px;
-	}
-	.fea-box {
-		width: 60%;
 	}
 	.features {
 		padding-top: 40px;
 	}
-	/*day la tab anh cua features*/
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		width: 52%;
+	.fea-box .col-box:nth-child(1), .fea-box .col-box:nth-child(3) {
+		margin-left: 0;
+	}
+	.col-image img.search {
+		width: 38%;
+		right: 61%;
 	}
 	.image-box  {
 		display: flex;
@@ -319,7 +310,9 @@ p.titles-second {
 		padding-bottom: 40px;
 	}
 }
-/*het media features*/
+/*reponsive mobile section features size 468*/
+/*reponsive mobile section features size 768*/
+/*reponsive mobile section features size 768*/
 .fea.text {
     text-align: center;
 }
@@ -449,10 +442,7 @@ p.col-second {
     padding-top: 23px;
 }
 /*media 480 col-box*/
-@media screen and (min-width: 240px) and (max-width: 900px) {
-.fea-box {
-	width: 33.33%;
-	}
+@media screen and (min-width: 240px) and (max-width: 768px) {
 	.search {
 		width: 36.33%;
 		padding-left: 92px;
@@ -463,22 +453,20 @@ p.col-second {
 	}
 }
 /*media 768 col-box*/
-@media screen and (min-width: 240px) and (max-width: 900px){
+@media screen and (min-width: 240px) and  (max-width:  768px){
 	.text-data .image-data {
 	background-image: url(../image/data.png);
 	background-repeat: no-repeat;
-	width: 49%;
 	background-size: contain;
-	left: 30%;
+	left: 0%;
 	top: 57%;
 	}
 	.high-level {
 		padding-top: 200px;
 	}
 	.first-text {
-		padding-top: 20px;
-	    width: 86%;
-	    text-align: justify;
+		padding: 20px 20px 0 0;
+	    width: 98%;
 		}
 	button.btn-data {
 		cursor: pointer;
@@ -486,7 +474,9 @@ p.col-second {
 		}
 }
 /*testimonials*/
-
+/*------------------------------------------------*/
+/*-----------------------------------------------*/
+/*responsive mobile testomials*/
 .tes {
     background: #9C69E2;
     border-radius: 50px;
