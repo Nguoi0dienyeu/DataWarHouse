@@ -138,28 +138,9 @@ button {
 .text-data {
     width: 60%;
 }
-@media screen and (max-width: 540px){
-	.save-data {
-		padding-top: 0;
-	}
-	.text-data {
-		width: 100%;
-		text-align: center;
-	}
-	.text-data .title {
-		font-size: 30px;
-	}
-	.text-data .btn-data {
-		width: 100%;
-		margin-top: 20px;
-	}
-	.save-data .text-data .image-data {
-		width: 100%;
-		top: 81%;
-	}
-}
-/*responsive mobile 768px*/
-@media screen and (min-width: 540px) and (max-width: 768px) {
+/*responsive ui/ux moible max-width 768px*/
+/*to section */
+@media screen and (max-width: 768px) {
 	div.footer-box {
 	    padding-top: 40px;
 	    display: flex;
@@ -176,77 +157,29 @@ button {
 		text-align: center;
 		margin: auto;
 	}
-	.save-data {
-		padding-top: 0;
-	}
-	.text-data {
-		width: 100%;
-		text-align: center;
-	}
-	.text-data .title {
-		font-size: 50px;
-	}
-	.text-data .btn-data {
-		width: 100%;
-		margin-top: 20px;
-	}
-	.save-data .text-data .image-data {
-		width: 100%;
-		top: 70%;
-		background-size: contain;
-		left: 0;
-	}
-	p.first-text {
-		width: 100%;
-		padding: 21px 0 20px 0;
-	}
 	/*high level*/
-	.high-level {
-		margin-top: 150px;
-	}
-	div.row {
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		border-radius: 20px;
-	}
-	div.high-text {
-		padding: 0 0 30px 0;
-		text-align: center;
-	}
 	div.fea-box {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	div.col-box:nth-child(1), div.col-box:nth-child(3) {
-		margin-left: 0;
-	}
-		p.titles-second {
-		padding: 0 0px 30px 0px;
-		text-align: center;
-		width: 100%;
-	}
-		.fea p.text-second {
+	
+	.fea p.text-second {
 		width: 100%;
 		padding: 0;
 	}
 	div.carosoul {
-		flex-shrink: 1;
-		flex-basis: 100%;
+		padding: 20px 0 0 0;
+		/*flex-basis: 85%;*/
 	}
 	div.carosoul-box {
 		width: 100%;
 	}
-	div.footer {
-		margin-top: 50px;
-	}
 }
-/*responesive design mobile 992px*/
-@media screen and (max-width: 992px) {
+/*responsive moblie max-width: */
 
-}
-/**/
+
+/*desktop template figma 1320px design*/
 .first-text {
     width: 41%;
     padding: 80px 0 60px 0;
@@ -291,9 +224,78 @@ p.first-text {
 	padding: 18px;
 	width: 25%;
 }
+/*responsive mobile section data max-width:  768px*/
+@media screen and (max-width:  768px)  {
+	.save-data {
+		padding-top: 0;
+	}
+	.text-data {
+		width: 100%;
+		text-align: center;
+	}
+	.text-data .title {
+		font-size: 30px;
+	}
+	.text-data .btn-data {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.text-data .image-data {
+		background-image: url(../image/data.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		left: 0%;
+		top: 57%;
+	}
+	.save-data .text-data .image-data {
+		width: 100%;
+		top: 76%;
+		background-size: contain;
+		left: 0;
+	}
+	p.first-text {
+		width: 100%;
+		padding: 21px 0 20px 0;
+	}
+}
 /*end section data*/
 
 /*section high-level*/
+/*responsive mobile section high-level max-width:  768px*/
+@media screen and (max-width: 768px) {
+	.high-level {
+		margin-top: 40px;
+	}
+	div.row {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	div.high-text {
+		padding: 0 0 30px 0;
+		text-align: center;
+	}
+	p.titles-second {
+		padding: 0 0px 30px 0px;
+		text-align: center;
+		width: 100%;
+	}
+	.high-text {
+		padding: 0;
+	}
+	.high-image img {
+		width: 100%;
+		box-sizing: border-box;
+	}
+/*one element of section features*/
+	div h1.titles {
+		font-size: 30px;
+	}
+}
+/*end responsive*/
 .row {
 	display: flex;
 	background: rgba(240, 99, 184, 0.15);
@@ -327,44 +329,16 @@ p.titles-second {
 	color: #4B5D68;
 	padding-top: 40px;
 }
-/*media high-level*/
-@media  screen and (max-width: 540px){
-	.row {
-		display: flex;
-		flex-direction: column;
-	}
-	.high-text {
-		padding: 0;
-	}
-	.high-image img {
-		width: 100%;
-		box-sizing: border-box;
-	}
-	p.titles-second {
-		padding: 0 0px 30px 0px;
-		text-align: center;
-		width: 100%;
-	}
-}
 /*media features*/
 /*reponsive mobile section features*/
-@media screen and (max-width: 540px){
+@media screen and (max-width: 768px){
 	#topnav ul li {
 	padding: 10px;
 	}	
-	h1.titles {
-		text-align: center;
-		padding-top: 0;
-		font-size: 30px;
-	}
-	.features .text-second {
-		width: 99%;
-		padding-top: 10px;
-	}
-	.features {
-		margin-top: 40px;
-	}
-	.fea-box .col-box:nth-child(1), .fea-box .col-box:nth-child(3) {
+	/*.fea-box .col-box:nth-child(1), .fea-box .col-box:nth-child(3) {
+		margin-left: 0;
+	}*/
+	div.col-box:nth-child(1), div.col-box:nth-child(3) {
 		margin-left: 0;
 	}
 	div.fea-box {
@@ -379,6 +353,7 @@ p.titles-second {
 		justify-content: center;
 	}
 }
+/*end*/
 .fea {
     text-align: center;
     padding-top: 40px;
@@ -507,41 +482,9 @@ p.col-second {
     color: #4B5D68;
     padding-top: 23px;
 }
-/*media 480 col-box*/
-@media screen and (max-width:  540px) {
-	.search {
-		width: 36.33%;
-		padding-left: 92px;
-		padding-top: 40px;
-	}
-	.demo-learn {
-		padding-top: 20px;
-	}
-}
-/*media 768 col-box*/
-@media screen and (max-width:  540px){
-	.text-data .image-data {
-	background-image: url(../image/data.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	left: 0%;
-	top: 57%;
-	}
-	.high-level {
-		margin-top: 50px;
-	}
-	.first-text {
-		padding: 20px 20px 0 0;
-	    width: 98%;
-		}
-	button.btn-data {
-		cursor: pointer;
-		padding: 22px;
-		}
-}
-/*testimonials*/
-/*------------------------------------------------*/
-@media screen and (max-width:  540px) {
+
+/*---------------feature box continued--------------------*/
+@media screen and (max-width:  768px) {
 	.tes.text {
 		padding: 26px 0 0 26px;
 	}
@@ -564,6 +507,9 @@ p.col-second {
 	}
 	div.col-text {
 		padding: 10px 0 0 177px;
+	}
+	.demo-learn {
+		padding-top: 20px;
 	}
 }
 /*-----------------------------------------------*/
@@ -595,6 +541,11 @@ p.subtitle {
     line-height: 32.4px;
     color: #4B5D68;
     padding-top: 20px;
+}
+@media screen and (max-width:  768px) {
+	div.carosoul-box.two,div.carosoul-box.three {
+		width: 75%;
+	}
 }
 .carosoul-box {
     background: #ffffff;
@@ -684,12 +635,15 @@ h2 {
 }
 /*footer*/
 /*responsive mobile max-width : 540px*/
-@media screen and (max-width:  540px) {
+@media screen and (max-width:  768px) {
 	div.try-free {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
+		width: 80%;
+		text-align: center;
+		margin: auto;
 	}
 	div.footer-box {
 		padding-top:40px;
