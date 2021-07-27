@@ -252,6 +252,10 @@ p.first-text {
 	div.carosoul-box.two,div.carosoul-box.three {
 		width: 75%;
 	}
+	div.first-menu ul li a{
+ 		display: block;
+ 		padding: 10px;
+ 	}
 }
 
 @media screen and (max-width: 1320px) {
