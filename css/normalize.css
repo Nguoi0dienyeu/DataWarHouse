@@ -11,7 +11,6 @@ p {
 #container {
 	margin: auto;
 	max-width: 1200px;
-	overflow: hidden;
 }
 .first-menu {
 	display: flex;
@@ -160,14 +159,6 @@ button {
 		justify-content: center;
 		align-items: center;
 	}
-
-	div.carosoul {
-		padding: 20px 0 0 0;
-		/*flex-basis: 85%;*/
-	}
-	div.carosoul-box {
-		width: 100%;
-	}
 }
 /*responsive moblie max-width: */
 
@@ -260,6 +251,16 @@ p.first-text {
 		width: 38%;
 		right: 61%;
 	}
+
+	div.carosoul {
+		padding: 20px 0 0 0;
+	}
+	div.carosoul-box {
+		width: 100%;
+	}
+	div.carosoul-box.two,div.carosoul-box.three {
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 1320px) {
@@ -306,10 +307,23 @@ p.first-text {
 		width: 100%;
 		padding: 0;
 	}
+	div p.titles-second {
+		padding: 0 0px 30px 0px;
+		width: 100%;
+	}
+	div img.search {
+		width: 38%;
+    	right: 62%;
+	}
+	div .fea-box {
+		justify-content: space-around;
+		align-items: center;
+	}
+	div .col-box:nth-child(1), div .col-box:nth-child(3) {
+		margin-left: 25px;
+	}
 }
 /*end section data*/
-
-
 /*responsive mobile section high-level max-width:  768px*/
 @media screen and (max-width: 768px) {
 	.high-level {
@@ -326,11 +340,6 @@ p.first-text {
 	div.high-text {
 		padding: 0 0 30px 0;
 		text-align: center;
-	}
-	p.titles-second {
-		padding: 0 0px 30px 0px;
-		text-align: center;
-		width: 100%;
 	}
 	.high-text {
 		padding: 0;
@@ -377,6 +386,7 @@ p.titles-second {
 	line-height: 28.8px;
 	color: #4B5D68;
 	padding-top: 40px;
+	width: 74%;
 }
 /*media features*/
 /*reponsive mobile section features*/
@@ -563,6 +573,7 @@ p.col-second {
 .tes {
     background: #9C69E2;
     border-radius: 50px;
+    overflow: hidden;
 }
 .carosoul {
     border: 20px;
@@ -589,11 +600,6 @@ p.subtitle {
     padding-top: 20px;
 }
 /*screen responsive moible*/
-@media screen and (max-width:  768px) {
-	div.carosoul-box.two,div.carosoul-box.three {
-		width: 75%;
-	}
-}
 .carosoul-box {
     background: #ffffff;
     border-radius: 20px;
@@ -741,6 +747,14 @@ div .space {
 .text-free h1 , .text-free p {
 	padding: 0;
 }
+.text-free p {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28.8px;
+	color: #4B5D68;
+	padding-top: 10px;
+}
 .btn-free {
 	display: flex;
 }
@@ -773,9 +787,6 @@ button.request {
     align-items: center;
     cursor: pointer;
     margin: 9px 26px 6px 0px;
-}
-.text-free .titles-second {
-	padding-top: 20px;
 }
 .footer {
     margin-top: 100px;
