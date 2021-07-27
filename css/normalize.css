@@ -64,7 +64,11 @@ p {
   	visibility: visible;
   	display: block;
 	position: absolute;
-	left: 88%;
+	right: 0;
+	padding-right: 30px;
+  }
+ .nav-logo { 
+ 	padding-left: 30px;
   }
   .nav-header .icon:hover {
   	visibility: visible;
@@ -72,7 +76,7 @@ p {
   	transform: rotate(-45deg);
   }
  	.demo {
-  	width: auto;
+  	width: 30%;
   	margin: 40px 0 0 0;
   }
   .first-menu {
@@ -176,7 +180,7 @@ button {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: contain;
-	width: 80%;
+	width: 75%;
 	height: 500px;
 	position: absolute;
 	right: 0;
@@ -216,8 +220,7 @@ p.first-text {
 @media screen and (max-width:  768px){
 	div .save-data .image-data {
 		margin: auto;
-		left: 0%;
-		top: 23%;
+		height: 315px;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -225,16 +228,8 @@ p.first-text {
 		background-size: contain;
 		left: 0;
 	}
-	p.first-text {
-		width: 100%;
-		padding: 21px 0 20px 0;
-	}
 }
 @media screen and (max-width: 992px) {
-	p.first-text {
-		width: 100%;
-		padding: 21px 0 20px 0;
-	}
 	.high-level {
 		margin-top: 200px;
 	}
@@ -246,10 +241,6 @@ p.first-text {
 	}
 	 section div.col-box:nth-child(1), div.col-box:nth-child(3) {
 		margin-left: 0;
-	}
-	.col-image img.search {
-		width: 38%;
-		right: 61%;
 	}
 
 	div.carosoul {
@@ -272,16 +263,20 @@ p.first-text {
 		text-align: center;
 	}
 	.text-data .title {
-		font-size: 30px;
+		font-size: 50px;
+		padding-top: 40px;
+		line-height: 50px;
 	}
-	.text-data .btn-data {
-		width: 100%;
+	button.btn-data {
+		width: 50%;
 		margin-top: 20px;
+		cursor: pointer;
+		position: relative;
 	}
-	.save-data .image-data {
+	.image-data {
 		margin: auto;
 		left: 0%;
-		top: 55%;
+		top: 66%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -290,8 +285,9 @@ p.first-text {
 		left: 0;
 	}
 	p.first-text {
-		width: 100%;
+		width: 80%;
 		padding: 21px 0 20px 0;
+		margin: auto;
 	}
 	.high-level {
 		margin-top: 250px;
@@ -300,16 +296,19 @@ p.first-text {
 		padding: 40px 20px 0 20px;
 	}
 	div h1.titles {
-		font-size: 25px;
+		font-size:30px;
+		padding: 20px;
+		line-height: 30px;
 	}
 		/*high level*/
 	.fea p.text-second {
-		width: 100%;
+		width: 89%;
 		padding: 0;
 	}
 	div p.titles-second {
 		padding: 0 0px 30px 0px;
-		width: 100%;
+		width: 87%;
+		margin: auto;
 	}
 	div img.search {
 		width: 38%;
@@ -321,6 +320,13 @@ p.first-text {
 	}
 	div .col-box:nth-child(1), div .col-box:nth-child(3) {
 		margin-left: 25px;
+	}
+	div.carosoul {
+		flex-basis: 54%;
+		padding: 20px 0 0 0;
+	}
+	div.carosoul:nth-of-type(3),div.carosoul:nth-of-type(2) {
+		right: 15%;
 	}
 }
 /*end section data*/
@@ -347,10 +353,7 @@ p.first-text {
 	.high-image img {
 		width: 100%;
 		box-sizing: border-box;
-	}
-/*one element of section features*/
-	div h1.titles {
-		font-size: 30px;
+		padding: 20px 0 20px 0;
 	}
 }
 /*end responsive*/
@@ -393,16 +396,13 @@ p.titles-second {
 @media screen and (max-width: 768px){
 	#topnav ul li {
 	padding: 10px;
+	display: block;
 	}	
 	div.col-box:nth-child(1), div.col-box:nth-child(3) {
 		margin-left: 0;
 	}
 	div.fea-box {
 		padding-bottom: 0;
-	}
-	.col-image img.search {
-		width: 38%;
-		right: 61%;
 	}
 	.image-box  {
 		display: flex;
@@ -542,6 +542,7 @@ p.col-second {
 /*---------------feature box continued--------------------*/
 @media screen and (max-width:  768px) {
 	.tes.text {
+		font-size: 30px;
 		padding: 26px 0 0 26px;
 	}
 	.col.col-image .vector {
@@ -562,7 +563,7 @@ p.col-second {
 		width: 100%;
 	}
 	div.col-text {
-		padding: 10px 0 0 177px;
+		padding: 10px 0 0 181px;
 	}
 	.demo-learn {
 		padding-top: 20px;
