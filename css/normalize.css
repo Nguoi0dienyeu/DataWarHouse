@@ -135,9 +135,6 @@ button {
     padding-top: 161px;
     padding-bottom: 141px;
 }
-.text-data {
-    width: 60%;
-}
 /*responsive ui/ux moible max-width 768px*/
 /*to section */
 @media screen and (max-width: 768px) {
@@ -163,11 +160,7 @@ button {
 		justify-content: center;
 		align-items: center;
 	}
-	
-	.fea p.text-second {
-		width: 100%;
-		padding: 0;
-	}
+
 	div.carosoul {
 		padding: 20px 0 0 0;
 		/*flex-basis: 85%;*/
@@ -184,14 +177,18 @@ button {
     width: 41%;
     padding: 80px 0 60px 0;
 }
+.text-data {
+    width: 66%;
+}
 .image-data {
     background-image: url(../image/data.png);
 	background-repeat: no-repeat;
-	/*background-position: right bottom;*/
+	background-position: right bottom;
+	background-size: contain;
 	width: 80%;
 	height: 500px;
 	position: absolute;
-	right: -72px;
+	right: 0;
 	top: 36%;
 }
  h1.title {
@@ -225,8 +222,48 @@ p.first-text {
 	width: 25%;
 }
 /*responsive mobile section data max-width:  768px*/
-@media screen and (max-width:  768px)  {
-	.save-data {
+@media screen and (max-width:  768px){
+	div .save-data .image-data {
+		margin: auto;
+		left: 0%;
+		top: 23%;
+	}
+	.save-data .text-data .image-data {
+		width: 100%;
+		top: 76%;
+		background-size: contain;
+		left: 0;
+	}
+	p.first-text {
+		width: 100%;
+		padding: 21px 0 20px 0;
+	}
+}
+@media screen and (max-width: 992px) {
+	p.first-text {
+		width: 100%;
+		padding: 21px 0 20px 0;
+	}
+	.high-level {
+		margin-top: 200px;
+	}
+	section .fea-box {
+		padding-bottom: 0; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	 section div.col-box:nth-child(1), div.col-box:nth-child(3) {
+		margin-left: 0;
+	}
+	.col-image img.search {
+		width: 38%;
+		right: 61%;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+.save-data {
 		padding-top: 0;
 	}
 	.text-data {
@@ -240,12 +277,10 @@ p.first-text {
 		width: 100%;
 		margin-top: 20px;
 	}
-	.text-data .image-data {
-		background-image: url(../image/data.png);
-		background-repeat: no-repeat;
-		background-size: contain;
+	.save-data .image-data {
+		margin: auto;
 		left: 0%;
-		top: 57%;
+		top: 55%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -257,10 +292,24 @@ p.first-text {
 		width: 100%;
 		padding: 21px 0 20px 0;
 	}
+	.high-level {
+		margin-top: 250px;
+	}
+	div .high-text {
+		padding: 40px 20px 0 20px;
+	}
+	div h1.titles {
+		font-size: 25px;
+	}
+		/*high level*/
+	.fea p.text-second {
+		width: 100%;
+		padding: 0;
+	}
 }
 /*end section data*/
 
-/*section high-level*/
+
 /*responsive mobile section high-level max-width:  768px*/
 @media screen and (max-width: 768px) {
 	.high-level {
@@ -335,9 +384,6 @@ p.titles-second {
 	#topnav ul li {
 	padding: 10px;
 	}	
-	/*.fea-box .col-box:nth-child(1), .fea-box .col-box:nth-child(3) {
-		margin-left: 0;
-	}*/
 	div.col-box:nth-child(1), div.col-box:nth-child(3) {
 		margin-left: 0;
 	}
@@ -542,6 +588,7 @@ p.subtitle {
     color: #4B5D68;
     padding-top: 20px;
 }
+/*screen responsive moible*/
 @media screen and (max-width:  768px) {
 	div.carosoul-box.two,div.carosoul-box.three {
 		width: 75%;
@@ -613,7 +660,7 @@ h2 {
 		cursor: pointer;
 }
 .dotter-four span:hover , span.active {
-	color: #F063B8;
+		color: #F063B8;
 }
 .play {
 		padding-top: 36px;
@@ -625,16 +672,16 @@ h2 {
 	    padding: 16px 20px 0 26px;;
 }
 .next:nth-child(1) {
-	transform: rotate(-180deg);
-	margin-right: 9px;
+		transform: rotate(-180deg);
+		margin-right: 9px;
 }
 .next:nth-child(1):hover {
-	background-image: url(../image/hover.png);
-	background-repeat: no-repeat;
-	transform: rotate(0deg);
+		background-image: url(../image/hover.png);
+		background-repeat: no-repeat;
+		transform: rotate(0deg);
 }
 /*footer*/
-/*responsive mobile max-width : 540px*/
+/*responsive mobile max-width : 768*/
 @media screen and (max-width:  768px) {
 	div.try-free {
 		display: flex;
