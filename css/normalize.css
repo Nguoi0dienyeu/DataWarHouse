@@ -221,12 +221,17 @@ p.first-text {
 	div .save-data .image-data {
 		margin: auto;
 		height: 315px;
+		top:67%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
 		top: 76%;
 		background-size: contain;
 		left: 0;
+	}
+	.text-data .title {
+		line-height: 50px;
+		display: block;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -256,6 +261,10 @@ p.first-text {
  		display: block;
  		padding: 10px;
  	}
+ 	div.image-data {
+ 		margin: auto;
+ 		top: 40%;
+ 	}
 }
 
 @media screen and (max-width: 1320px) {
@@ -266,13 +275,13 @@ p.first-text {
 		width: 100%;
 		text-align: center;
 	}
-	.text-data .title {
-		font-size: 50px;
-		padding-top: 40px;
+	div h1.title {
+		font-size: 40px;
 		line-height: 50px;
+		display: ruby;
 	}
 	button.btn-data {
-		width: 50%;
+		width: 30%;
 		margin-top: 20px;
 		cursor: pointer;
 		position: relative;
@@ -280,7 +289,7 @@ p.first-text {
 	.image-data {
 		margin: auto;
 		left: 0%;
-		top: 66%;
+		top: 58%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -289,9 +298,9 @@ p.first-text {
 		left: 0;
 	}
 	p.first-text {
-		width: 80%;
-		padding: 21px 0 20px 0;
-		margin: auto;
+		max-width: 100%;
+		padding: 20px 0 20px 0;
+		width: auto;
 	}
 	.high-level {
 		margin-top: 250px;
@@ -300,9 +309,9 @@ p.first-text {
 		padding: 40px 20px 0 20px;
 	}
 	div h1.titles {
-		font-size:30px;
+		font-size:27px;
 		padding: 20px;
-		line-height: 30px;
+		line-height: 40px;
 	}
 		/*high level*/
 	.fea p.text-second {
@@ -311,8 +320,8 @@ p.first-text {
 	}
 	div p.titles-second {
 		padding: 0 0px 30px 0px;
-		width: 87%;
-		margin: auto;
+		width: auto;
+		max-width: 100%;
 	}
 	div img.search {
 		width: 38%;
@@ -358,6 +367,9 @@ p.first-text {
 		width: 100%;
 		box-sizing: border-box;
 		padding: 20px 0 20px 0;
+	}
+	button.btn-data {
+		padding: 15px 0 15px 0;
 	}
 }
 /*end responsive*/
