@@ -218,10 +218,11 @@ p.first-text {
 }
 /*responsive mobile section data max-width:  768px*/
 @media screen and (max-width:  768px){
-	div .save-data .image-data {
+	.save-data .image-data {
 		margin: auto;
 		height: 315px;
-		top:67%;
+		top:61%;
+		padding: 20px;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -232,6 +233,16 @@ p.first-text {
 	.text-data .title {
 		line-height: 50px;
 		display: block;
+	}
+}
+@media screen and (max-width: 540px) {
+	.save-data .image-data {
+		top: 37%;
+		height: 315px;
+		padding: 40px;
+	}
+	div.high-level {
+		margin-top: 0px;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -263,7 +274,8 @@ p.first-text {
  	}
  	div.image-data {
  		margin: auto;
- 		top: 40%;
+ 		top: 34%;
+ 		padding: 20px;
  	}
 }
 
@@ -289,7 +301,7 @@ p.first-text {
 	.image-data {
 		margin: auto;
 		left: 0%;
-		top: 58%;
+		top: 52%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -303,7 +315,7 @@ p.first-text {
 		width: auto;
 	}
 	.high-level {
-		margin-top: 250px;
+		margin-top: 200px;
 	}
 	div .high-text {
 		padding: 40px 20px 0 20px;
@@ -346,7 +358,7 @@ p.first-text {
 /*responsive mobile section high-level max-width:  768px*/
 @media screen and (max-width: 768px) {
 	.high-level {
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 	div.row {
 		flex-wrap: wrap;
