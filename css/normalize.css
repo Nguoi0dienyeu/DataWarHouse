@@ -221,7 +221,7 @@ p.first-text {
 		margin: auto;
 		height: 315px;
 		top:61%;
-		padding: 20px;
+		padding: 70px 0 0 20px;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -232,9 +232,10 @@ p.first-text {
 }
 @media screen and (max-width: 540px) {
 	.save-data .image-data {
-		top: 30%;
-		height: 315px;
-		padding: 40px;
+		box-sizing: border-box;
+		width: 126%;
+	    right: 38px;
+	    margin-top: -74px;
 	}
 	 div br {
 		display: block;
@@ -284,7 +285,8 @@ p.first-text {
 
 @media screen and (max-width: 1320px) {
 .save-data {
-		padding-top: 0;
+		padding: 40px;
+		display: block;
 	}
 	br {
 		display: none;
@@ -296,8 +298,9 @@ p.first-text {
 		display: block;
 	}
 	.text-data {
-		width: 100%;
+		max-width: 100%;
 		text-align: center;
+		width: auto;
 	}
 	div h1.title {
 		font-size: 40px;
@@ -308,10 +311,11 @@ p.first-text {
 		position: relative;
 	}
 	.image-data {
-		margin: auto;
-		left: 0%;
-		top: 47%;
-		padding: 25px;
+		width: auto;
+	    right: 2px;
+	    height: 500px;
+	    margin-top: 28px;
+	    position: inherit;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
@@ -320,13 +324,14 @@ p.first-text {
 		left: 0;
 	}
 	p.first-text {
-		max-width: 84%;
+		max-width: 100%;
 		padding: 20px 0 20px 0;
 		margin: auto;
 		line-height: 30px;
 	}
-	.high-level {
-		margin-top: 240px;
+	div .high-level {
+		margin-top: 0;
+		padding-top: 0;
 	}
 	div .high-text {
 		padding: 40px 20px 0 20px;
