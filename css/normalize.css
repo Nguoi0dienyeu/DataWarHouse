@@ -170,7 +170,7 @@ button {
 /*desktop template figma 1320px design*/
 .first-text {
     width: 41%;
-    padding: 80px 0 60px 0;
+    padding: 50px 0 50px 0;
 }
 .text-data {
     width: 74%;
@@ -211,7 +211,7 @@ p.first-text {
 .btn-data {
 	background-color: #9C69E2;
 	border-radius: 50px;
-	padding: 10px 20px 10px 20px;
+	padding: 14px 20px 14px 20px;
 }
 /*responsive mobile section data max-width:  768px*/
 @media screen and (max-width: 540px) {
@@ -224,10 +224,19 @@ p.first-text {
 	div.high-level {
 		margin-top: 0px;
 	}
-	p.first-text {
-		max-width:80%;
+	div p.first-text {
+		max-width:84%;
 		width: auto;
 		padding: 20px;
+		font-size: 16px;
+	}
+	.high-text p.titles-second {
+		max-width: 100%;
+		width: auto;
+	}
+	div .fea p.text-second {
+		max-width: 90%;
+		width: auto;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -302,10 +311,11 @@ p.first-text {
 		left: 0;
 	}
 	p.first-text {
-		max-width: 100%;
+		max-width: 46%;
 		padding: 20px 0 20px 0;
 		margin: auto;
 		line-height: 30px;
+		width: auto;
 	}
 	div .high-level {
 		margin-top: 0;
@@ -321,13 +331,15 @@ p.first-text {
 	}
 		/*high level*/
 	.fea p.text-second {
-		width: 89%;
+		width: 48%;
 		padding: 0;
 	}
 	div p.titles-second {
 		padding: 0 0px 30px 0px;
 		margin: auto;
-		max-width: 100%;
+		font-size: 16px;
+		max-width: 95%;
+		width: auto;
 	}
 	div img.search {
 		width: 38%;
@@ -373,6 +385,18 @@ p.first-text {
 		width: 100%;
 		box-sizing: border-box;
 		padding: 20px 0 20px 0;
+	}
+	p.first-text {
+		max-width: 55%;
+		width: auto;
+		font-size: 16px;
+	}
+	br {
+		display: block;
+	}
+	div p.titles-second {
+		max-width: 70%;
+		width: auto;
 	}
 }
 /*end responsive*/
