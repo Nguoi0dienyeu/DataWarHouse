@@ -292,6 +292,8 @@ p.first-text {
 	}
 	.image-data {
 	    position: inherit;
+	    background-position: center;
+	    padding-top: 48.25%;
 	}
 	.save-data .text-data .image-data {
 		width: 100%;
