@@ -173,18 +173,16 @@ button {
     padding: 80px 0 60px 0;
 }
 .text-data {
-    width: 66%;
+    width: 74%;
 }
 .image-data {
     background-image: url(../image/data.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-size: contain;
-	width: 75%;
-	height: 500px;
 	position: absolute;
-	right: 0;
-	top: 36%;
+	right: 0%;
+	left: 0;
+	padding-top: 50.25%;
 }
  h1.title {
 	font-family: Helvetica;
@@ -216,26 +214,9 @@ p.first-text {
 	padding: 10px 20px 10px 20px;
 }
 /*responsive mobile section data max-width:  768px*/
-@media screen and (max-width:  768px){
-	.save-data .image-data {
-		margin: auto;
-		height: 315px;
-		top:61%;
-		padding: 70px 0 0 20px;
-	}
-	.save-data .text-data .image-data {
-		width: 100%;
-		top: 76%;
-		background-size: contain;
-		left: 0;
-	}
-}
 @media screen and (max-width: 540px) {
-	.save-data .image-data {
-		box-sizing: border-box;
-		width: 126%;
-	    right: 38px;
-	    margin-top: -74px;
+	.text-data .title {
+		font-size: 30px;
 	}
 	 div br {
 		display: block;
@@ -277,15 +258,14 @@ p.first-text {
  		padding: 10px;
  	}
  	div.image-data {
- 		margin: auto;
- 		top: 34%;
- 		padding: 20px;
+ 		background-size: contain;
+ 		margin-top: 30px;
  	}
 }
 
 @media screen and (max-width: 1320px) {
 .save-data {
-		padding: 40px;
+		padding: 20px;
 		display: block;
 	}
 	br {
@@ -311,10 +291,6 @@ p.first-text {
 		position: relative;
 	}
 	.image-data {
-		width: auto;
-	    right: 2px;
-	    height: 500px;
-	    margin-top: 28px;
 	    position: inherit;
 	}
 	.save-data .text-data .image-data {
@@ -407,7 +383,7 @@ p.first-text {
     padding: 48px 15px 30px 38px;
 }
 .high-level {
-    padding-top: 141px;
+    padding-top: 71px;
 }
 .high-text {
 	padding: 125px 94px 0 94px;
